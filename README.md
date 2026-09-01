@@ -6,9 +6,9 @@ A en B voor aanvallen, A is een punch, B is een kick, andere aanvallen als je cr
 
 
 # Team Indeling:
-Aiden: Attacks, Sound design
-Adem: Animations, Sound design
-Ace: Map design
-Sammy: UI
-Bo: Enemy AI,
-Julian: Movement
+# Aiden: Attacks, Sound design
+# Adem: Animations, Sound design
+# Ace: Map design
+# Sammy: UI
+# Bo: Enemy AI,
+# Julian: Movement
