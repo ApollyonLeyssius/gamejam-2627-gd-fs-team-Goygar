@@ -19,6 +19,7 @@ public class Attack : MonoBehaviour
             { AttackType.crouching, transform.Find("CrouchingPunch").GetComponent<Collider2D>() },
             { AttackType.air, transform.Find("AirPunch").GetComponent<Collider2D>() }
         }; //assigning attacks
+        
     }
 
     // Update is called once per frame
