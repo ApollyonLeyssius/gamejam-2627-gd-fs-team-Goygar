@@ -12,6 +12,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Transform GroundCheck;
     [SerializeField] private Rigidbody2D rb;
 
+    
+
 
     private void FixedUpdate()
     {
@@ -30,6 +32,20 @@ public class PlayerMovement : MonoBehaviour
     }
     private bool IsGrounded() 
     {
-        return Physics2D.OverlapCapsule(GroundCheck.position, new Vector2(1f, 0.05f), CapsuleDirection2D.Horizontal, 0, GroundLayer) != null;
+
+        if (Physics2D.OverlapCapsule(GroundCheck.position, new Vector2(1f, 0.05f), CapsuleDirection2D.Horizontal, 0, GroundLayer) != null)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+        
     }
+    public bool _isGrounded()
+    {
+        return IsGrounded(); //sowwy voor de readonly, ik had m nodig
+    }
+    
 }
